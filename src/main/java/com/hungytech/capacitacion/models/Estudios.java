@@ -1,5 +1,8 @@
 package com.hungytech.capacitacion.models;
+import javax.persistence.Entity;
 import java.awt.image.BufferedImage;
+
+@Entity
 public class Estudios {
     private TipoEstudio tipoEstudio;
     private String nombreEstudio;
