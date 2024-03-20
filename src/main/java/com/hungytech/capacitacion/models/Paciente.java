@@ -1,7 +1,7 @@
 package com.hungytech.capacitacion.models;
-
 import java.util.Date;
 import java.util.*;
+
 
 public class Paciente extends Persona{
     private HistoriaClinica historiaClinica;
@@ -14,6 +14,9 @@ public class Paciente extends Persona{
         this.grupoSanguineo = grupoSanguineo;
     }
 
+    public void setGrupoSanguineo(String grupoSanguineo) {
+        this.grupoSanguineo = grupoSanguineo;
+    }
     public String getGrupoSanguineo(){
         return grupoSanguineo;
     }
