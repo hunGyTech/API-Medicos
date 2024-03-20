@@ -1,8 +1,9 @@
 package com.hungytech.capacitacion.models;
+import javax.persistence.Entity;
 import java.util.Date;
 import java.util.*;
 
-
+@Entity
 public class Paciente extends Persona{
     private HistoriaClinica historiaClinica;
     private String grupoSanguineo;
