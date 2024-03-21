@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9359bba7-04ba-4f17-be20-7b3da275881a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/API-Medicos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9359bba7-04ba-4f17-be20-7b3da275881a" name="Changes" comment="Creacion entidad Medico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +84,17 @@
       <workItem from="1710860694128" duration="3587000" />
       <workItem from="1710944403518" duration="2377000" />
       <workItem from="1710986962367" duration="338000" />
-      <workItem from="1710989034819" duration="1276000" />
+      <workItem from="1710989034819" duration="2256000" />
     </task>
+    <task id="LOCAL-00001" summary="Creacion entidad Medico">
+      <option name="closed" value="true" />
+      <created>1710990646933</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710990646933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +110,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creacion entidad Medico" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion entidad Medico" />
   </component>
 </project>
