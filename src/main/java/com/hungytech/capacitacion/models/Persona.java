@@ -1,21 +1,38 @@
-package com.hungytech.capacitacion.API;
+package com.hungytech.capacitacion.models;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
 public class Persona {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private int dni;
     private String nombreApellido;
     private String direccion;
     private String genero;
     private Date fechaNacimiento;
 
-    public Persona(int dni, String nombre,String direccion, String genero, Date fechaNacimiento) {
+    public Persona(){}
+
+    public Persona(Integer id, int dni, String nombreApellido, String direccion, String genero, Date fechaNacimiento) {
+        this.id = id;
         this.dni = dni;
-        this.nombreApellido = nombre;
+        this.nombreApellido = nombreApellido;
         this.direccion = direccion;
         this.genero = genero;
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public int getDni() {
         return dni;
@@ -25,12 +42,12 @@ public class Persona {
         this.dni = dni;
     }
 
-    public String getnombreApellido;() {
-        return nombreApellido;;
+    public String getNombreApellido() {
+        return nombreApellido;
     }
 
-    public void setnombreApellido;(String nombre) {
-        this.nombreApellido; = nombre;
+    public void setNombreApellido(String nombreApellido) {
+        this.nombreApellido = nombreApellido;
     }
 
     public String getDireccion() {
@@ -53,9 +70,10 @@ public class Persona {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fecha){
-        this.fechaNacimiento = fecha;
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
+}
 
 
 

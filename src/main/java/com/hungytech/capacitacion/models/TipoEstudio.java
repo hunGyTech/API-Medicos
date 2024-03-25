@@ -1,10 +1,8 @@
-import javax.persistence.Entity;
-
-@Entity
+package com.hungytech.capacitacion.models;
 public enum TipoEstudio{
     BIOPSIA(100),
     COLONOSCOPIA(101),
-    DENSITOMETRIA-OSEA(102),
+    DENSITOMETRIA_OSEA(102),
     ECOCARDIOGRAMA(103),
     ECOGRAFIA(104),
     ELECTROCARDIOGRAMA(105),

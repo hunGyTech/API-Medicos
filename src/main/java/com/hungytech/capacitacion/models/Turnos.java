@@ -8,26 +8,26 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Turno {
+public class Turnos {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITYenerationType)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private LocalDateTime fechaYHora;
 
     @ManyToOne
-    @JoinColumn(name = "paciente_dni")
+    @JoinColumn(name = "id_paciente")
     private Paciente paciente;
 
     @ManyToOne
-    @JoinColumn(name = "matricula_id")
+    @JoinColumn(name = "matricula")
     private Medico medico;
 
     private float precio;
 
     @ManyToOne
-    @JoinColumn(name = "estudio_id")
-    private Estudio estudio;
+    @JoinColumn(name = "id_estudio")
+    private Estudios estudio;
 
 }

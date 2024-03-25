@@ -1,22 +1,31 @@
 package com.hungytech.capacitacion.models;
-import javax.persistence.Entity;
-import java.awt.image.BufferedImage;
+
+import javax.persistence.*;
 
 @Entity
 public class Estudios {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  Integer id;
     private TipoEstudio tipoEstudio;
     private String nombreEstudio;
     private String diagnostico;
     private Float precio;
-    private BufferedImage imagen; //BufferedImage representa imagenes Raster (JPEG, PNG, BMP y TIFF) para manejar magenes vectoriales (SVG) se podria usar a biblioteca externa ApacheBatik
-    //private String imagen; <<Almaceno la ruta de la imagen>>
+    @Column(columnDefinition = "TEXT")
+    private String imagen64;
 
-    public Estudios(TipoEstudio tipoEstudio, String nombreEstudio, String diagnostico, Float precio, BufferedImage imagen) {
+
+    public Estudios() {
+
+    }
+
+    public Estudios(TipoEstudio tipoEstudio, String nombreEstudio, String diagnostico, Float precio, String imagen) {
         this.tipoEstudio = tipoEstudio;
         this.nombreEstudio = nombreEstudio;
         this.diagnostico = diagnostico;
         this.precio = precio;
-        this.imagen = imagen ;
+        this.imagen64 = imagen ;
     }
 
 
