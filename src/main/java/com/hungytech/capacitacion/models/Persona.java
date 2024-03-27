@@ -1,19 +1,23 @@
 package com.hungytech.capacitacion.models;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class Persona {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private int dni;
-    private String nombreApellido;
-    private String direccion;
-    private String genero;
-    private Date fechaNacimiento;
+    @Column(unique = true)
+    protected int dni;
+    protected String nombreApellido;
+    protected String direccion;
+    protected String genero;
+    @Temporal(TemporalType.DATE) // Indica que solo se almacena la fecha (sin hora)
+    @DateTimeFormat(pattern = "dd-MM-yyyy") // Formato en el que se muestra en las vistas
+    protected Date fechaNacimiento;
 
     public Persona(){}
 
